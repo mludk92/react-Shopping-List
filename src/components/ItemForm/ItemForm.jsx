@@ -32,17 +32,19 @@ const submitForm = (event) => {
         quantity: itemQuantity,
         unit: itemUnit
     }).then((response)=>{
+
         //clear out input fields
         setItemName('')
         setItemQuantity(0)
         setItemUnit('')
         // react version of get() after function
-        fetchItemList()
+        fetchItemList() 
+        
     }).catch((error)=>{
         console.log(`Error in POST ${error}`)
         alert('Something Went Wrong')
     })
-
+    fetchItemList()
 }
     return (
         <div>
