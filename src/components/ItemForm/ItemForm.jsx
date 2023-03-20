@@ -42,6 +42,7 @@ const submitForm = (event) => {
         console.log(`Error in POST ${error}`)
         alert('Something Went Wrong')
     })
+
 }
     return (
         <div>
@@ -61,10 +62,10 @@ const submitForm = (event) => {
                 onChange={(event)=>setItemQuantity(event.target.value)}>     
                 </input>
                 Unit: 
-                <input type="text" required value={itemUnit}
+                <input type="text" value={itemUnit}
                 onChange={(event)=>setItemUnit (event.target.value)}>     
                 </input>
-                <input type="submit"></input>
+                <button type="submit">Add Item</button>
             </form>
         </div>
         // <div>
