@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 // We must import axios in each component where we want to use it
 import axios from 'axios'
+import ItemCount from '../ItemCount/ItemCount.jsx';
 
-
-function DomItems) {
+function DomItems() {
 
     const [listOfItems, setListOfItems] = useState(['No Items'])
 //GET
@@ -20,21 +20,22 @@ useEffect(()=> {
     fetchItemList()
 },[]) //!Remember the empty array
 
+return (
+  
+    listOfItems.map((item)=>(
+        //what we wanter to render
+        <li id="listItem" key={item.id}>
+            <ul id="items">{item.name} <br/> 
+            {item.quantity} <span> {item.unit} </span>
+            <ItemCount />
+            </ul>      
+        </li>
+        
+    )) 
+) 
 }
 
-return (
-    <div>
-        {
-            listOfItems.map((item)=>(
-                //what we wanter to render
-                <li key={item.id}>
-                    {item.name} <br/> 
-                    {item.quantity} <span> {item.unit} </span>
-                </li>
-            ))
-        }
-    </div>
-) 
+
 
 
 // All components must export 

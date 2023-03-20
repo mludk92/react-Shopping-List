@@ -66,19 +66,18 @@ const submitForm = (event) => {
                 </input>
                 <input type="submit"></input>
             </form>
-            
-            <ol>
-                {
-                    listOfItems.map((item)=>(
-                        //what we wanter to render
-                        <li key={item.id}>
-                            {item.name} <br/> 
-                            {item.quantity} <span> {item.unit} </span>
-                        </li>
-                    ))
-                }
-            </ol>
         </div>
+        // <div>
+        //         {
+        //             listOfItems.map((item)=>(
+        //                 //what we wanter to render
+        //                 <li key={item.id}>
+        //                     {item.name} <br/> 
+        //                     {item.quantity} <span> {item.unit} </span>
+        //                 </li>
+        //             ))
+        //         }
+        // </div>
     ) 
 }
 
