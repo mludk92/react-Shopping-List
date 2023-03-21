@@ -16,7 +16,11 @@
     border-style: solid;
     justify-content: center;
     background-color: rgb(205, 228, 247);
-
+    border-radius: 15%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    border-bottom: 13px solid #eee;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
   }
 
   
@@ -25,6 +29,7 @@
     flex-direction: column;
     color:Black;
     align-items: top;
+    text-align: center;
     
   }
 
