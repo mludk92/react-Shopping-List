@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const { isTSMethodSignature } = require('@babel/types');
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5003;
 const cartRouter = require('./routes/items.router.js')
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json()); // needed for axios requests

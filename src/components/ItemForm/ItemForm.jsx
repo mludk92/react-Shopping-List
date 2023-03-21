@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 // We must import axios in each component where we want to use it
 import axios from 'axios'
-
+import DomItems from '../DomItems/DomItems'
 
 
 function ItemForm() {
@@ -68,19 +68,10 @@ const submitForm = (event) => {
                 onChange={(event)=>setItemUnit (event.target.value)}>     
                 </input>
                 <button type="submit">Add Item</button>
+                <DomItems listOfItems={listOfItems} />
             </form>
         </div>
-        // <div>
-        //         {
-        //             listOfItems.map((item)=>(
-        //                 //what we wanter to render
-        //                 <li key={item.id}>
-        //                     {item.name} <br/> 
-        //                     {item.quantity} <span> {item.unit} </span>
-        //                 </li>
-        //             ))
-        //         }
-        // </div>
+
     ) 
 }
 

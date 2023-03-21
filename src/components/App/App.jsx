@@ -14,10 +14,6 @@ function App() {
                 <div>
                     <ItemForm/>
                 </div>
-                <div>
-                    <DomItems/>
-                    
-                </div>
             </main>
         </div>
     );

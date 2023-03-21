@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import swal from 'sweetalert';
 
 function ItemCount () {
   const [counter,setCounter] = useState(0)
@@ -23,7 +23,26 @@ let increaseItemCounter = () =>{
 
   //reset counter 
   const resetItemCounter = () =>{
-    setCounter(0)
+    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+  })
+  .then((willDelete) => {
+      if (willDelete) {
+          setCounter(0)
+              .then((response) =>  {
+                  swal("Deleted successfully!", {
+                          icon: "success",
+                      });
+              })
+              .catch(() => {
+                  swal("Error!", "Failed to delete!", "error");
+              })
+      }
+  })
   }
 
     return (
