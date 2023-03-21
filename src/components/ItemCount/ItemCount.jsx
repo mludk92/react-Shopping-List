@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import swal from 'sweetalert';
 
+
 function ItemCount () {
   const [counter,setCounter] = useState(0)
 //funtion to increase click counter
@@ -46,7 +47,8 @@ let increaseItemCounter = () =>{
   }
 
     return (
-        <div>
+
+        <div id="counter">
           <button onClick={increaseItemCounter}>+</button>
           <button onClick={decreaseItemCounter}>-</button>
           <button onClick={resetItemCounter}>Reset</button>

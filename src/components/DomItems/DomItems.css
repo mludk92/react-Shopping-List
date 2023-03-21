@@ -6,13 +6,30 @@
     flex-wrap: wrap;
 }
 .listItem {
-    color:blue;
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+    color:Black;
     margin: 30px;
+    width: 175px;
+    height: 130px;
+    border-style: solid;
+    justify-content: center;
+    background-color: rgb(205, 228, 247);
+
   }
 
   
 .items {
     display:flex;
-    flex-direction: row;
-    color:blue
+    flex-direction: column;
+    color:Black;
+    align-items: top;
+    
   }
+
+#counter{
+  margin-top: auto;
+  color:black;
+
+}

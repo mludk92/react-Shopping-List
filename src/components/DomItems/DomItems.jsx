@@ -29,10 +29,9 @@ return (
     <div id="container">
     {listOfItems.map((item)=>(
         <div class="listItem" key={item.id}>
-            <div class="items">{item.name}
-            {item.quantity} 
-            {item.unit} 
-            <ItemCount />
+            <div class="items"> {item.name}<br/>
+            {item.quantity} {item.unit}
+                <div  id="counter"><ItemCount/> </div> 
             </div>      
         </div>
       
