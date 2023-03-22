@@ -3,7 +3,31 @@ main {
   margin: auto;
 }
 
+button {
+  background-color: white;
+  padding: 10px;
+  margin-left: 5px;
+  vertical-align: top;
+  box-shadow: 2px 1px 2px gray;
+  border-radius: 50%;
+  width: 60px;
+  
+}
 
+#plus:active {
+  box-shadow: 0 0 0 white;
+  margin: 2px 1px 2px 1px;
+}
+
+#min:active {
+  box-shadow: 0 0 0 white;
+  margin: 2px 1px 2px 1px;
+}
+
+#reset:active {
+  box-shadow: 0 0 0 white;
+  margin: 2px 1px 2px 1px;
+}
 /* .listItem {
   display: flexbox;
   grid-template-columns: auto auto auto;

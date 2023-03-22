@@ -49,9 +49,9 @@ let increaseItemCounter = () =>{
     return (
 
         <div id="counter">
-          <button onClick={increaseItemCounter}>+</button>
-          <button onClick={decreaseItemCounter}>-</button>
-          <button onClick={resetItemCounter}>Reset</button>
+          <button id="plus" onClick={increaseItemCounter}>+</button>
+          <button id="min"onClick={decreaseItemCounter}>-</button>
+          <button id="reset" onClick={resetItemCounter}>Reset</button>
           <div>Item Count {counter}</div>
         </div>
     ) 
