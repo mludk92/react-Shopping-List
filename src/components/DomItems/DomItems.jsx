@@ -13,7 +13,7 @@ function DomItems({listOfItems , fetchItemList}) {
 const deleteItem = (id) => {
     console.log(`deleteItem ${id}`)
     axios.delete(`/cart/${id}`).then((response)=>{
-        fetchItemList()
+    fetchItemList()
     }).catch((error)=>{
         console.log(`error in delete ${error}`)
         alert('something went wrong')

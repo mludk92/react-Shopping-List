@@ -69,9 +69,12 @@ const submitForm = (event) => {
                 onChange={(event)=>setItemUnit (event.target.value)}>     
                 </input>
                 <button type="submit">Add Item</button>
+                </form>
                 <DomItems listOfItems={listOfItems}
-                 fetchItemList={fetchItemList()}/>
-            </form>
+                 fetchItemList={fetchItemList}/>
+                
+
+            
         </div>
 
     ) 
