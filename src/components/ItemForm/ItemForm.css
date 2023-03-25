@@ -1,0 +1,7 @@
+#formInput {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+  }
