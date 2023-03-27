@@ -25,9 +25,9 @@ return (
     {listOfItems.map((item)=>(
         <div class="listItem" key={item.id}>
             <div class="items"> {item.name}<br/>
-            {item.quantity} {item.unit}<br/>
+            {/*{item.quantity} {item.unit}<br/> */}
             <button onClick={() => deleteItem(item.id)}>Delete Item</button>
-                <div  id="counter"><ItemCount/> </div> 
+                <div  id="counter"><ItemCount itemquantity = {item.quantity}/> </div> 
             </div>      
         </div>
       

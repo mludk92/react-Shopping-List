@@ -2,13 +2,13 @@ import { useState } from 'react'
 import swal from 'sweetalert';
 
 
-function ItemCount () {
-  const [counter,setCounter] = useState(0)
+function ItemCount ({itemquantity}) {
+  const [counter,setCounter] = useState(itemquantity)
 //funtion to increase click counter
-let increaseItemCounter = () =>{
+let increaseItemCounter = () => {
   //counter += 1 do not modify state directly
   //increase counter
-    setCounter(count => count + 1);
+    setCounter(count => parseFloat((parseFloat(count) + 0.5).toFixed(2)));
     console.log(counter)
   };
 
@@ -18,7 +18,7 @@ let increaseItemCounter = () =>{
     if(counter <= 0) {
     setCounter(counter)}
     else{
-         setCounter(counter - 1)
+      setCounter(count => parseFloat((parseFloat(count) - 0.5).toFixed(2)));
     }    
 }
 
