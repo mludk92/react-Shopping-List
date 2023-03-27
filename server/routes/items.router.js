@@ -37,11 +37,27 @@ router.post('/', (req, res) => {
 })
 
 router.delete('/:id', (req,res)=>{
+    
+    console.log(req.body,'put req.body')
     const sqlText = `delete from "cart" where "id" = $1`
     pool.query(sqlText, [req.params.id]).then((results)=>{
         res.sendStatus(200)
     }).catch((error)=>{
         console.log(`Error in Delete request ${error}`)
+        res.sendStatus(500)
+    })
+})
+
+//PUT
+router.put('/:id', (req,res)=>{
+    let update = req.body
+    const sqlText = `
+    UPDATE cart SET quantity = ($1) WHERE id = $2;
+    `
+    pool.query(sqlText,[update.ItemQuant, req.params.id]).then((results)=>{
+        res.sendStatus(200)
+    }).catch((error)=>{
+        console.log(`error in router PUT ${error}`)
         res.sendStatus(500)
     })
 })

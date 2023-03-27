@@ -27,7 +27,7 @@ return (
             <div class="items"> {item.name}<br/>
             {/*{item.quantity} {item.unit}<br/> */}
             <button onClick={() => deleteItem(item.id)}>Delete Item</button>
-                <div  id="counter"><ItemCount itemquantity = {item.quantity}/> </div> 
+                <div  id="counter"><ItemCount itemquantity = {item.quantity} itemId = {item.id} fetchItemList={fetchItemList}/> </div> 
             </div>      
         </div>
       
