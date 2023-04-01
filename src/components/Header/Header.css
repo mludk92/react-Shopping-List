@@ -2,4 +2,14 @@
   background-color: silver;
   text-align: center;
   padding: 0.25em;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 4px 2px;
+  box-shadow: 3px 3px 3px #ababab;
+  align-content: center;
+  text-shadow:  6px 6px 6px #ababab;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
