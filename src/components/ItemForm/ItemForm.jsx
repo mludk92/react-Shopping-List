@@ -49,7 +49,7 @@ const submitForm = (event) => {
 }
     return (
         <div>
-            <h2>Add an Item </h2>
+            <h3> Insert Item and Quantity Into Form Below </h3>
             {/* //use for testing {
                 //this turn our Array into a string
                 JSON.stringify(listOfCreatures)
